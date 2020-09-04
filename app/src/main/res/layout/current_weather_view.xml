@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="weatherDetails"
+            type="com.example.weatherapplication.viewmodel.CurrentWeatherViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/first_card"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        app:cardBackgroundColor="@color/CardTwoBackgroundHourlyForecast"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="9dp"
+        app:contentPadding="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/current_forecast_icon"
+                app:layout_constraintEnd_toStartOf="@+id/current_temperature"
+                app:layout_constraintTop_toTopOf="@+id/current_temperature"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/current_description"
+                android:layout_width="69dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="12dp"
+                android:text="cloudy "
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/current_temperature"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/current_temperature">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/current_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_one_margin"
+                android:text="@string/margin_card1"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.534"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="50dp"
+                app:layout_constraintTop_toBottomOf="@id/current_date"
+                app:layout_constraintStart_toEndOf="@id/current_date">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/current_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lahore"
+                android:textSize="20sp"
+                android:layout_marginTop="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/current_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_one_margin"
+                android:text="24th june"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/current_location">
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

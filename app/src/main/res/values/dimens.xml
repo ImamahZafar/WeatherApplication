@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_icon_size">70dp</dimen>
+    <dimen name="text_size">30sp</dimen>
+    <dimen name="card_two_text_size">20sp</dimen>
+    <dimen name="card_two_text_size_temp">17sp</dimen>
+    <dimen name="card_two_margin_left">40dp</dimen>
+    <dimen name="card_one_margin">5dp</dimen>
+    <dimen name="cardone_date_margin">10dp</dimen>
+    <dimen name="card3_image_dimensions">60dp</dimen>
+    <dimen name="card_width">350dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_three_text_size">15sp</dimen>
+    <dimen name="card_three_day_text_size">18sp</dimen>
+</resources>
